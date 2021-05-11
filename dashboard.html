@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Welcome User! | Trackify</title>
+
+    <!-- Icons-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Rubik:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link href="css/styles.css" rel="stylesheet"/>
+	<link href="css/evo-calendar.min.css" type="text/css" rel="stylesheet"/>
+	<link href="css/evo-calendar.royal-navy.min.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/evo-calendar.min.js"></script>
+</head>
+
+    <body>
+	<!-- ========== START OF HEADER ========= -->
+      <header class="header-area overlay">
+
+        <!-- ========== START OF NAVIGATION BAR ========= -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">TRACKIFY</a>
+          
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+		  <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li><a href="profile.html" class="nav-item nav-link js-scroll-trigger">Profile</a></li>
+              <li><a href="dashboard.html" class="nav-item nav-link">Dashboard</a></li>
+              <li><a href="#contact" class="nav-item nav-link js-scroll-trigger">Contact</a></li>
+              <li><a href="login.html" class="nav-item nav-link" >Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <!-- ========== END OF NAVIGATION BAR ========= -->
+		<!-- ========== START OF DASHBOARD BAR ========= -->
+		
+		<div class="dashboard">
+		
+		<div id="calendar"></div>
+		
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('#calendar').evoCalendar({
+				})
+				$('#calendar').evoCalendar('setTheme', 'Royal Navy');
+			})
+		</script>
+		<!-- ========== END OF DASHBOARD BAR ========= -->
+	</body>
+</html>
